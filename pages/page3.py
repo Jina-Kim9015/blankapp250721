@@ -23,6 +23,9 @@ data = {
 }
 df = pd.DataFrame(data)
 
+# 인덱스를 1부터 시작하도록 설정
+df.index = df.index + 1
+
 st.write("성적 데이터:")
 st.dataframe(df)
 
@@ -59,4 +62,4 @@ for label in ax2.get_yticklabels():
 ax2.legend(prop=fontprop)
 st.pyplot(fig2)
 
-# 각
+# 각 주요 부분에
